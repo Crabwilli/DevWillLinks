@@ -6,7 +6,7 @@ Programa desenvolvido para divulgação de tecnologias.
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Crabwilli/Projetos.git">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://www.figma.com/file/3zXCRJO0xjD7NgWjZHzUvQ/DevWill-Links-%E2%80%A2-Projeto?type=design&t=eAjlamuSPMJmk8DZ-6">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
