@@ -5,24 +5,25 @@
 }
 
 
-
 :root {
     --text-color: white;
-    --bg-url: url(./assets/assets/Background0.png);
+    --bg-url: url(/assets/assets/backgraud-nigth.png)no-repeat top center/cover;;
     --stroke-color: rgba(255, 255, 255, 0.2);
     --surface-color: rgba(255, 255, 255, 0.2);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(/assets/assets/moon-stars.svg);
+    
 }
 .light {
     --text-color: black;
-    --bg-url: url(./assets/assets/Background001.png);
-    --stroke-color: rgba(0, 0, 0, 0.2);
-    --surface-color:rgba(0, 0, 0, 0.2);
+    --bg-url: url(./assets/assets/backgraud-ligth.jpg)no-repeat top center/cover;;
+    --stroke-color: rgba(255, 255, 255, 0.2);
+    --surface-color: rgba(255, 255, 255, 0.2);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
     --highlight-color:  rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(/assets/assets/sun.svg);
+    
 }
 
 body{ 
@@ -70,6 +71,26 @@ body * {
     margin-top: 8px;
 }
 
+
+
+
+#profile profile-hover {
+    border: 2px red;
+    width: 150px;
+    height: 150px;
+    padding: 150px white;
+    z-index: 1;
+
+
+}
+
+#profile profile-hover:hover {
+
+
+}
+
+
+
 /* switch */
 #switch {
     position: relative;
@@ -112,6 +133,75 @@ body * {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
 
+}
+
+/* Sticker */
+.sticker {
+    position: relative;
+    width: 64px;
+
+    margin: 4px auto;
+}
+
+.sticker .seg {
+    visibility: hidden;
+    opacity: 0;
+    width: 112px;
+    position: absolute;
+    top: 40%;
+    left: -350%;
+    z-index: 1;
+}
+.sticker:hover .seg {
+    visibility: visible;
+    opacity: 1;
+}
+.sticker:hover .pri {
+    visibility: hidden;
+    opacity: 1;
+}
+
+.sticker img {
+    width: 112px;
+    position: absolute;
+    top: 40%;
+    left: -350%;
+    z-index: 1;
+}
+
+/* Sticker02 */
+
+.sticker02 {
+    position: relative;
+    width: 64px;
+    top: 80%;
+    margin: 4px auto;
+}
+.sticker02 .seg {
+    visibility: hidden;
+    opacity: 0;
+    width: 160px;
+    position: absolute;
+    top: -80%;
+    left: 298%;
+    z-index: 1;
+}
+.sticker02:hover .seg {
+    visibility: visible;
+    opacity: 1;
+}
+.sticker02:hover .pri {
+    visibility: hidden;
+    opacity: 1;
+}
+
+.sticker02 img {
+    padding: 398px 0; 
+    width: 160px;
+    position: absolute;
+    top: -80%;
+    left: 298%;
+    z-index: 1;
 }
 
 
@@ -178,11 +268,11 @@ footer {
 
 @media (min-width: 700px) {
     :root {
-        --bg-url: url(./assets/assets/Background0.png);
+        --bg-url: url(./assets/assets/backgraud-nigth.png);
     }
 
     .light {
-        --bg-url: url(./assets/assets/Background001.png);
+        --bg-url: url(./assets/assets/backgraud-ligth.jpg);
     }
 }
 
@@ -203,3 +293,4 @@ footer {
         right: 0%;
     }
 }
+

@@ -18,11 +18,12 @@ function toggleMode() {
 
 // Sebstituir a imagem:
 // setAttribute: Selecionar o atributo que quer alterar.
-        img.setAttribute('src', "./assets/assets/avatar-light02.png")
+        img.setAttribute('src', "./assets/assets/avatar-moon-light.png")
     } else {
 
 // se tiver sem light mode, manter a imagem normal
-        img.setAttribute("src", "./assets/assets/avatar-moon-light.png")
+        img.setAttribute("src", "./assets/assets/avatar-light02.png")
     }
+
 }
 
