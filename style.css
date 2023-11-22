@@ -7,7 +7,7 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(/assets/assets/backgraud-nigth.png)no-repeat top center/cover;;
+    --bg-url: url(./backgraud-nigth.png);
     --stroke-color: rgba(255, 255, 255, 0.2);
     --surface-color: rgba(255, 255, 255, 0.2);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
@@ -17,7 +17,7 @@
 }
 .light {
     --text-color: black;
-    --bg-url: url(./assets/assets/backgraud-ligth.jpg)no-repeat top center/cover;;
+    --bg-url: url(./backgraud-ligth.jpg);
     --stroke-color: rgba(255, 255, 255, 0.2);
     --surface-color: rgba(255, 255, 255, 0.2);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
@@ -27,18 +27,19 @@
 }
 
 body{ 
-    /*
-    background-image: url(./assets/assets/bg-mobile.jpg);
+    /* 
+    background-image: var(--bg-url);
     background-repeat : no-repeat;
     background-position: top center;
     background-size: cover;
-    */
+    */   
 
     /*background : color image Repeat position/size*/
 
     background: var(--bg-url) no-repeat top center/cover;
     height: 100%;
     width: 100%;
+    
 }
 body * {
     font-family: 'Inter', sans-serif;
@@ -268,11 +269,11 @@ footer {
 
 @media (min-width: 700px) {
     :root {
-        --bg-url: url(./assets/assets/backgraud-nigth.png);
+        --bg-url: url(./backgraud-nigth.png);
     }
 
     .light {
-        --bg-url: url(./assets/assets/backgraud-ligth.jpg);
+        --bg-url: url(./backgraud-ligth.jpg);
     }
 }
 
