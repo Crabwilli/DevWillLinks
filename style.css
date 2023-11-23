@@ -183,7 +183,7 @@ body * {
     opacity: 0;
     width: 160px;
     position: absolute;
-    top: -80%;
+    top: 186px;
     left: 298%;
     z-index: 1;
 }
@@ -197,10 +197,10 @@ body * {
 }
 
 .sticker02 img {
-    padding: 398px 0; 
+    padding: 298px 0; 
     width: 160px;
     position: absolute;
-    top: -80%;
+    top: 186px;
     left: 298%;
     z-index: 1;
 }
