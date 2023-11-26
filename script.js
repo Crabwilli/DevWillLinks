@@ -27,3 +27,40 @@ function toggleMode() {
 
 }
 
+
+let currentSlide = 0;
+let slideInterval;
+
+function showSlide(index) {
+  const carousel = document.querySelector('.carousel');
+  const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+  if (index >= totalSlides) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = totalSlides - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  const translateValue = -currentSlide * 100 + '%';
+  carousel.style.transform = 'translateX(' + translateValue + ')';
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+// Adiciona um temporizador para avançar automaticamente os slides a cada 5 segundos (5000 milissegundos)
+slideInterval = setInterval(nextSlide, 2000);
+
+// Pára o temporizador quando o mouse estiver sobre o carrossel
+document.querySelector('.carousel-container').addEventListener('mouseover', () => clearInterval(slideInterval));
+
+// Reinicia o temporizador quando o mouse sair do carrossel
+document.querySelector('.carousel-container').addEventListener('mouseout', () => slideInterval = setInterval(nextSlide, 5000));
+
