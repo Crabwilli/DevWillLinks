@@ -150,7 +150,7 @@ body * {
     width: 112px;
     position: absolute;
     top: 40%;
-    left: -350%;
+    left: -210%;
     z-index: 1;
 }
 .sticker:hover .seg {
@@ -166,7 +166,7 @@ body * {
     width: 112px;
     position: absolute;
     top: 40%;
-    left: -350%;
+    left: -210%;
     z-index: 1;
 }
 
@@ -184,8 +184,8 @@ body * {
     opacity: 0;
     width: 350px;
     position: absolute;
-    top: 378px;
-    left: 130%;
+    top: 385px;
+    left: -28%;
     z-index: 1;
 }
 .sticker02:hover .seg {
@@ -201,8 +201,8 @@ body * {
     padding: 100%; 
     width: 350px;
     position: absolute;
-    top: 378px;
-    left: 130%;
+    top: 385px;
+    left: -28%;
     z-index: 1;
 }
 
@@ -279,7 +279,7 @@ header, footer {
   
   .carousel-container {
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin: 20px auto;
     overflow: hidden;
     position: relative;

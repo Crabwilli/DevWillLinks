@@ -56,7 +56,7 @@ function nextSlide() {
 }
 
 // Adiciona um temporizador para avançar automaticamente os slides a cada 5 segundos (5000 milissegundos)
-slideInterval = setInterval(nextSlide, 2000);
+slideInterval = setInterval(nextSlide, 1500);
 
 // Pára o temporizador quando o mouse estiver sobre o carrossel
 document.querySelector('.carousel-container').addEventListener('mouseover', () => clearInterval(slideInterval));
